@@ -6,5 +6,4 @@ RUN apt-get update && apt-get -y install curl
 RUN curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN cd ~/torch; 
-RUN chmod +x install.sh
-RUN ./install.sh
+RUN yes|./install.sh
