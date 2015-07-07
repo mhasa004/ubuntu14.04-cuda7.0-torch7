@@ -7,4 +7,4 @@ RUN curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-de
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN cd ~/torch 
 RUN chmod +x install.sh
-RUN yes | ./install.sh
+RUN yes | ~/torch/install.sh
